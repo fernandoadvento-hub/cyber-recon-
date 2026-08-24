@@ -1,1 +1,24 @@
 # Cyberrecon
+Como Instalar e Executar
+Passo 1: Instalar as Dependências
+No Termux (Android):
+
+Bash
+pkg update && pkg upgrade -y
+pkg install python exiftool -y
+pip install requests dnspython python-whois
+No Linux (Ubuntu / Debian / Kali / Parrot):
+
+Bash
+sudo apt update
+sudo apt install python3 python3-pip exiftool -y
+pip3 install requests dnspython python-whois
+Passo 2: Executar a Ferramenta
+Modo Interativo (Menu na tela):
+
+Bash
+python3 cyberrecon.py
+Modo Direto / Automático (Via parâmetro na CLI):
+
+Bash
+python3 cyberrecon.py -t exemplo.com
